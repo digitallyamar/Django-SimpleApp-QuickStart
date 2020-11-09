@@ -2,6 +2,11 @@
 
 NOTE: This repo uses class based view and renders html using a HTML template file.
 
+## Features
+
+- Simple Todo App with corresponding model.
+- Supports Editing of Model data using Admin panel.
+
 ## How this repo was created in the beginning?
 
 Step 1: Create a directory to hold our Django project.
