@@ -1,0 +1,1 @@
+# Django-SimpleApp-QuickStart
