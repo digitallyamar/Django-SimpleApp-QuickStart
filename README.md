@@ -6,6 +6,7 @@ NOTE: This repo uses class based view and renders html using a HTML template fil
 
 - Simple Todo App with corresponding model.
 - Supports Editing of Model data using Admin panel.
+- Support for created_by field with default set to current_user in case left empty.
 
 ## How this repo was created in the beginning?
 
@@ -22,6 +23,7 @@ Step 2: Create Python3 virtual enironment and activate it.
 Step 3: Install Django in using pip in the venv.
 
     pip install Django
+    pip install django-crum
 
 Step 4: Create Django project in the current directory.
 
@@ -55,15 +57,23 @@ Step 6: But for Django project to know the existence of this app, we need to upd
     'app',
 ]
 
-Step 7: Next, apply migrations to our project using the command:
+Step 7: Next, create and apply migrations to our project using the command:
+
+    python3 manage.py makemigrations
 
     python3 manage.py migrate
+
+    A this point in time, create a superuser(admin) for Django using command:
+
+    python3 manage.py createsuperuser
 
 Step 8: We can now run our Django server using the command:
 
     python3 manage.py runserver
 
     If you now visit the link [127.0.0.1:8000](127.0.0.1:8000), you should be greeted with Django Welcome Page!
+
+    You can also login to the Admin panel by visiting the link [[127.0.0.1:8000/admin](127.0.0.1:8000/admin/) and using the superuser credentials created earlier.
 
 
 ## Where to go from here?
