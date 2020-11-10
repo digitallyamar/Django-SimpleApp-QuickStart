@@ -114,4 +114,4 @@ Step 11: Now, let us apply the migrations thus created using the command:
 Step 12: With these in place, let us now run the server again:
         python3 manage.py runserver
 
-        And now if we visit the url [127.0.0.1:8000](127.0.0.1:8000) you should see webpage rendered using template html file.
+And now if we visit the url [127.0.0.1:8000](127.0.0.1:8000) you should see webpage rendered using template html file.
